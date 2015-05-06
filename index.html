@@ -1,0 +1,28 @@
+<!doctype html>
+<html data-ng-app="app">
+    <head>
+        <base href="/">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="pt-br" />
+        <title>Todo - App Tracker</title>
+        <link rel="stylesheet" href="app/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li data-ng-class="{active: activetab == '/'}"><a href="#/home">Home</a></li>
+                <li data-ng-class="{active: activetab == '/search'}"><a href="#/search">Search</a></li>
+            </ul>
+
+            <div data-ng-view></div>
+        </div>
+
+        <script src="app/js/angular.min.js"></script>
+        <script src="app/js/angular-route.min.js"></script>
+
+        <script src="app/app.js"></script>
+        <script src="app/controllers/controllers.js"></script>
+        <script src="app/directives/email.js"></script>
+    </body>
+</html>
